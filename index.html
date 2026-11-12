@@ -10,7 +10,13 @@
     body { max-width: 720px; margin: 0 auto; padding: 64px 24px; font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
     h1 { font-size: 2rem; margin-bottom: .25rem; }
     p { margin: .75rem 0; }
-    nav { margin-top: 2rem; display: flex; gap: 1.25rem; flex-wrap: wrap; }
+    nav { display: flex; flex-direction: column; align-items: flex-start; gap: .75rem; }
+    .primary { margin-top: 2rem; }
+    .story { margin: 3.5rem 0; }
+    .story a { font-weight: 600; }
+    .story p { max-width: 480px; margin-top: .5rem; font-size: .9rem; opacity: .7; }
+    footer { font-size: .875rem; }
+    footer nav { opacity: .7; }
     a { color: inherit; }
     .muted { opacity: .7; }
   </style>
@@ -19,15 +25,21 @@
   <main>
     <h1>Souvoix</h1>
     <p>Local transcription and bilingual subtitles for macOS.</p>
-    <nav aria-label="Souvoix links">
+    <nav class="primary" aria-label="Souvoix links">
       <a href="https://apps.apple.com/us/app/souvoix/id6823389227?mt=12">Mac App Store</a>
       <a href="https://youtu.be/08WZW5tx4yk">Watch Demo</a>
     </nav>
-    <nav aria-label="Legal and support">
-      <a href="privacy/">Privacy Policy</a>
+    <section class="story" aria-label="The story behind Souvoix">
+      <a href="https://phrygiangates.github.io/posts/souvoix/">Why I Built It</a>
+      <p>From learning French to building my first Mac app. A little story about language learning, software, and making something for myself.</p>
+    </section>
+  </main>
+  <footer>
+    <nav aria-label="Privacy and support">
+      <a href="privacy/">Privacy</a>
       <a href="support/">Support</a>
     </nav>
     <p class="muted">© 2026 PhrygianGates</p>
-  </main>
+  </footer>
 </body>
 </html>
